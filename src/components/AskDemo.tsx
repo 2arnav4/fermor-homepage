@@ -22,7 +22,7 @@ const qas: Qa[] = [
     q: "How long would my savings last if I lost my job?",
     a: [
       "About 3.2 months.",
-      "Your essentials (rent, EMIs, groceries, bills) average ₹41,500 a month, and you have ₹1.33 L across savings and a liquid fund. Six months needs ₹1.16 L more. At ₹10,000 a month you'd get there in just under a year.",
+      "Your essentials (rent, EMIs, groceries, bills) average ₹41,500 a month, and you have ₹1.33\u00A0L across savings and a liquid fund. Six months needs ₹1.16\u00A0L more. At ₹10,000 a month you'd get there in just under a year.",
     ],
     uses: ["Savings", "Liquid fund", "Recurring payments"],
   },
@@ -30,15 +30,15 @@ const qas: Qa[] = [
     q: "Should I prepay my home loan or invest the extra?",
     a: [
       "Neither, yet.",
-      "Prepaying earns a guaranteed 8.6%, your loan rate. Equity has historically done better over 10+ years, with real swings along the way. But your emergency fund covers only 3 months, so the first ₹1.16 L is better kept liquid. After that, the trade-off is worth a proper look.",
+      "Prepaying earns a guaranteed 8.6%, your loan rate. Equity has historically done better over 10+ years, with real swings along the way. But your emergency fund covers only 3 months, so the first ₹1.16\u00A0L is better kept liquid. After that, the trade-off is worth a proper look.",
     ],
     uses: ["Home loan", "Emergency fund", "Risk profile"],
   },
   {
-    q: "Will I have ₹15 L for a down payment by 2030?",
+    q: "Will I have ₹15\u00A0L for a down payment by 2030?",
     a: [
       "Not at your current pace.",
-      "₹18,000 a month at 7% gets you to about ₹10 L by late 2030. To hit ₹15 L on time you'd need roughly ₹27,000 a month. Keeping ₹18,000 and moving the date gets you there by mid-2032.",
+      "₹18,000 a month at 7% gets you to about ₹10\u00A0L by late 2030. To hit ₹15\u00A0L on time you'd need roughly ₹27,000 a month. Keeping ₹18,000 and moving the date gets you there by mid-2032.",
     ],
     uses: ["Goal: Home", "Current SIPs", "Assumed 7% return"],
   },

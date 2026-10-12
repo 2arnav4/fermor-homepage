@@ -11,8 +11,8 @@ function stat(term: string) {
 describe("Forecast", () => {
   it("starts at ₹5,000 a month for 10 years at 12%", () => {
     render(<Forecast />);
-    expect(stat("You put in")).toBe("₹6.0 L");
-    expect(stat("Estimated value")).toBe("₹11.6 L");
+    expect(stat("You put in")).toBe("₹6.0\u00A0L");
+    expect(stat("Estimated value")).toBe("₹11.6\u00A0L");
   });
 
   it("recalculates when the sliders move", () => {
@@ -20,8 +20,8 @@ describe("Forecast", () => {
     fireEvent.change(screen.getByLabelText("Monthly SIP"), { target: { value: "2000" } });
 
     expect(screen.getByText("₹2,000", { selector: "output" })).toBeInTheDocument();
-    expect(stat("You put in")).toBe("₹2.4 L");
-    expect(stat("Estimated value")).toBe("₹4.6 L");
+    expect(stat("You put in")).toBe("₹2.4\u00A0L");
+    expect(stat("Estimated value")).toBe("₹4.6\u00A0L");
   });
 
   it("exposes the formatted value to assistive tech", () => {
@@ -39,7 +39,7 @@ describe("Forecast", () => {
     expect(screen.getByText("5 years", { selector: "output" })).toBeInTheDocument();
     expect(within(horizons).getByRole("button", { name: "5y" })).toHaveAttribute("aria-pressed", "true");
     expect(within(horizons).getByRole("button", { name: "10y" })).toHaveAttribute("aria-pressed", "false");
-    expect(stat("You put in")).toBe("₹3.0 L");
+    expect(stat("You put in")).toBe("₹3.0\u00A0L");
   });
 
   it("uses singular 'year' for a one-year horizon", () => {
@@ -58,7 +58,7 @@ describe("Forecast", () => {
   it("describes the chart for screen readers", () => {
     render(<Forecast />);
     expect(
-      screen.getByRole("img", { name: "Projected value grows to ₹11.6 L over 10 years" }),
+      screen.getByRole("img", { name: "Projected value grows to ₹11.6\u00A0L over 10 years" }),
     ).toBeInTheDocument();
   });
 });

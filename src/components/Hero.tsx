@@ -122,7 +122,7 @@ function SnapshotCard() {
           <p className="font-medium">Food delivery is up 22% on last month.</p>
           <p className="mt-1 text-ink-2">
             Moving <span className="num">₹2,000</span> of it into your SIP could
-            add about <span className="num font-medium text-ink">₹4.6 L</span>{" "}
+            add about <span className="num whitespace-nowrap font-medium text-ink">₹4.6 L</span>{" "}
             over 10 years at 12%.
           </p>
         </div>

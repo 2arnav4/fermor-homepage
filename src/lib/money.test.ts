@@ -19,13 +19,13 @@ describe("formatINRShort", () => {
   });
 
   it("switches to lakh at 1,00,000", () => {
-    expect(formatINRShort(100000)).toBe("₹1.0 L");
-    expect(formatINRShort(464678)).toBe("₹4.6 L");
+    expect(formatINRShort(100000)).toBe("₹1.0\u00A0L");
+    expect(formatINRShort(464678)).toBe("₹4.6\u00A0L");
   });
 
   it("switches to crore at 1,00,00,000", () => {
-    expect(formatINRShort(10000000)).toBe("₹1.00 Cr");
-    expect(formatINRShort(23456789)).toBe("₹2.35 Cr");
+    expect(formatINRShort(10000000)).toBe("₹1.00\u00A0Cr");
+    expect(formatINRShort(23456789)).toBe("₹2.35\u00A0Cr");
   });
 });
 

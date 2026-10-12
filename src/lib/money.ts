@@ -9,10 +9,11 @@ export function formatINR(value: number): string {
   return inr.format(Math.round(value));
 }
 
-/** ₹12.3 L / ₹1.24 Cr, for chart labels and headline figures */
+/** ₹12.3 L / ₹1.24 Cr, for chart labels and headline figures. The non-breaking
+ * space keeps the unit on the same line as the number. */
 export function formatINRShort(value: number): string {
-  if (value >= 1e7) return `₹${(value / 1e7).toFixed(2)} Cr`;
-  if (value >= 1e5) return `₹${(value / 1e5).toFixed(1)} L`;
+  if (value >= 1e7) return `₹${(value / 1e7).toFixed(2)}\u00A0Cr`;
+  if (value >= 1e5) return `₹${(value / 1e5).toFixed(1)}\u00A0L`;
   return formatINR(value);
 }
 
