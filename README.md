@@ -4,6 +4,20 @@ A homepage concept for [Fermor](https://fermor.in), a personal finance platform 
 
 **Live:** https://fermor-homepage-delta.vercel.app
 
+## Screenshots
+
+![Hero with sample monthly snapshot](docs/screenshots/desktop-hero.png)
+
+![Ask Fermor: pick a question, see an answer grounded in your own data](docs/screenshots/desktop-ask.png)
+
+![SIP forecast with live chart](docs/screenshots/desktop-forecast.png)
+
+<p>
+  <img src="docs/screenshots/mobile-hero.png" alt="Mobile hero" width="300" />
+  &nbsp;
+  <img src="docs/screenshots/mobile-forecast.png" alt="Mobile forecast" width="300" />
+</p>
+
 ## Run it
 
 ```bash
